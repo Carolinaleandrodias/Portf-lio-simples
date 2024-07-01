@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor-primaria: #93228E;
+    --cor-secundaria: #B463B0;
+    --cor-terciaria: white;
+    --cor-quaternaria: #7d055d;
+
+    --font-primaria: 'PT Serif', serif;
+
+}
+
+/* abrir todos os elemetos da pagina  ele tira os espacos que estoa na pagina*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.minha-imagem {
+    width: 350px;
+    height: 350px;
+}
+
+/*Seletores*/
+/* vh é a altura da tela  o tam da tela
+vw é a largura da tela  o tam da tela */
+body {
+    /* height: 100vh; */
+    /* imagens n sai da caixa */
+    box-sizing: border-box;
+    /* background-color: #D0C0DB; */
+    color: white;
+    background: linear-gradient(to right, #B463B0, #AB5EA8, #93228E);
+
+
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+/* isso ~e uma classe */
+.titulo-Destaque{
+    color: var(--cor-primaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.5rem;
+    font-family:var(--font-primaria);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+.apresentacao__links__subtitulos {
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    font-size: 1.5rem;
+
+
+}
+
+
+.apresentacao__links__botoes{
+    /* background-color: #93228E; */
+    border: 2px solid var(--cor-primaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--font-primaria);
+    font-weight: 700;
+
+}
+/* botao fica mais escuro quando passa o mouse */
+.apresentacao__links__botoes:hover {
+    background-color:var(--cor-quaternaria);
+}
+
+
+.apresentacao__imagem{
+    width: 50%
+
+}
+.rodape {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
