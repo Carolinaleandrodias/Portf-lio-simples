@@ -138,6 +138,7 @@ body {
     font-weight: 700;
 }
 
+/* responsividade */
 @media (max-width: 1200px){
 
     .cabecalho{
